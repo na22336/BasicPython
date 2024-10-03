@@ -5,7 +5,10 @@ from math import sin, pi
 # -----------
 
 value = 0
-h = pi/200
+N = 100
+a = 0
+b = pi/2
+h = (b - a)/N
 for i in range(100):
     value += h*(sin(0 + i * h) + sin(0 + (i + 1)*h))/2
 print(value)

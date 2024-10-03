@@ -1,7 +1,6 @@
 # TODO
-eps = 100000
-
-while True:
+eps = 1
+while eps !=0:
     if 1 + eps > 1:
         eps = eps/2
     else:
