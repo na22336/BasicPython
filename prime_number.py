@@ -2,7 +2,6 @@ a = input("aの値を入力: ")
 b = input("bの値を入力: ")
 
 # TODO
-import math
 a = int(a)
 b = int(b)
 # (1)
@@ -22,7 +21,7 @@ else:
 if b == 1:
         print('bは素数ではありません')
         exit()
-elif b % 2 != 0 and b % 3 != 0 and b % 5 != 0 :
+elif b % 2 != 0 and b % 3 != 0 and b % 5 != 0 and b %7 != 0:
         print('bは素数です')
         exit()
 else:
