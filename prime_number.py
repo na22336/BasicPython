@@ -1,33 +1,24 @@
-a = input("aの値を入力: ")
-b = input("bの値を入力: ")
+a = int(input("aの値を入力: "))
+b = int(input("bの値を入力: "))
 
-# TODO
+list1 = [a,b]
+# （１）
 import math
-a = int(a)
-b = int(b)
-# (1)
-if a == 1:
-        print('aは素数ではありません')
-        exit()
+for j in list1:
+    if type(j) == int and j >= 0:
+        if j == 1:
+            print('素数ではありません')
 
-elif a % 2 != 0 and a % 3 != 0 and a % 5 != 0 and a % 7 != 0:
-        print('aは素数です')
-        exit()
+        elif all(j % i != 0 for i in range(2,round(math.sqrt(j)) + 1)):
+            print('素数です')
 
-else:
-        print('aは素数ではありません')
-        exit()
+        else:
+             print('素数ですはありません')
 
-# (2)
-if b == 1:
-        print('bは素数ではありません')
-        exit()
-elif b % 2 != 0 and b % 3 != 0 and b % 5 != 0 and b %7 != 0:
-        print('bは素数です')
-        exit()
-else:
-        print('bは素数ではありません')
-        exit()
+    else:
+         print('エラーを検出しました')
+
+
 
 # 補遺
 #for i in range(1,math.ceil(math.sqrt(b))):
