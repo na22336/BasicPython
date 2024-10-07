@@ -2,6 +2,7 @@ a = input("aの値を入力: ")
 b = input("bの値を入力: ")
 
 # TODO
+import math
 a = int(a)
 b = int(b)
 # (1)
