@@ -15,6 +15,6 @@ class warizan:
     
     def tagainiso(a, b):
         if warizan.euclid(a,b) == 1:
-            return print('互いに素です')
+            return True
         else:
-            return print('互いに素ではありません')
+            return False
