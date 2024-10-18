@@ -4,8 +4,7 @@
 # TODO
 # while b!=0:
     # a, b  = b, a%b
-
-
+#print
 
 class Warizan:
     def euclid(a, b):
