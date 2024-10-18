@@ -4,14 +4,16 @@
 # TODO
 # while b!=0:
     # a, b  = b, a%b
-
-
+#print
 
 class Warizan:
     def euclid(a, b):
         while b!=0:
             a, b = b, a%b
-        return print(int(a))
+        return a
 
     def tagainiso(a, b):
-        return Warizan.euclid(a,b) == 1
+        if Warizan.euclid(a,b) == 1:
+            return True
+        else:
+            return False

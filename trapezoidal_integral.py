@@ -1,4 +1,4 @@
-from math import sin, pi,sqrt,exp
+from math import sin, pi,sqrt,exp,cos
 # --example--
 # print(sin(0))
 # >>> 0
