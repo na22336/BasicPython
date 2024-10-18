@@ -23,7 +23,3 @@ def prime(n):
     # elif all(b % i != 0) == True:
         # print('bは素数です')
         # exit()
-
-    # else:
-        # print('bは素数ではありません')
-        # exit()
