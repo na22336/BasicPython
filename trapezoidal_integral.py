@@ -4,24 +4,24 @@ from math import sin, pi,sqrt,exp
 # >>> 0
 # -----------
 
-def  trapezoidal_integral(f,a,b,n):
+def  trapezoidal_integral(f,a = 0,b = 1,n = 100):
     value = 0
     h = (b - a)/n
     for i in range(n):
         value += h*(f(a + i * h) + f(a + (i + 1)*h))/2
-    print(value)
+    return float(value)
 
 # (1)
-trapezoidal_integral(sin,0,pi/2,50)
+print(trapezoidal_integral(sin,b = pi/2,n = 50))
 
 # (2)
 def secpi(x):
     return 4/(1 + x ** 2)
 
-trapezoidal_integral(secpi,0,1,100)
+print(trapezoidal_integral(secpi,0,1,100))
 
 # (3)
 def rote(x):
     return sqrt(pi) * exp(-x**2)
 
-trapezoidal_integral(rote,-100,100,1000)
+print(trapezoidal_integral(rote,-100,100,1000))

@@ -7,14 +7,11 @@
 
 # print(a)
 
-class warizan:
+class Warizan:
     def euclid(a, b):
         while b!=0:
             a, b = b, a%b
-        return print(a)
-    
+        return print(int(a))
+
     def tagainiso(a, b):
-        if warizan.euclid(a,b) == 1:
-            return True
-        else:
-            return False
+        return Warizan.euclid(a,b) == 1

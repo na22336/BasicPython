@@ -2,22 +2,17 @@ import math
 def prime(n):
     if type(n) == int and n > 0:
         if n == 1:
-            print(False)
-            exit()
+            return False
         elif n == 2:
-            print(True)
-            exit()
+            return True
         elif n % 2 == 0:
-            print(False)
-            exit()
+            return False
         elif all(n % i != 0 for i in range(3,round(math.sqrt(n)) + 1 ,2)):
-            print(True)
-            exit()
+            return True
         else:
-             print(False)
-             exit()
+             return False
     else:
-         print('エラーを検出しました')
+         return 'エラーを検出しました'
 
 # 補遺
 #for i in range(1,math.ceil(math.sqrt(b))):
