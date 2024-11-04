@@ -17,5 +17,3 @@ class Warizan:
             return True
         else:
             return False
-
-Warizan.euclid(14,91)
