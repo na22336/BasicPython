@@ -17,3 +17,5 @@ class Warizan:
             return True
         else:
             return False
+
+Warizan.tagainiso(14,91)
