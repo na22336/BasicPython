@@ -14,6 +14,7 @@ def prime(n):
     else:
          return 'エラーを検出しました'
 
+
 # 補遺
 #for i in range(1,math.ceil(math.sqrt(b))):
     # if b == 1:
