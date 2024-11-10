@@ -1,23 +1,18 @@
-a = int(input("aの値を入力: "))
-b = int(input("bの値を入力: "))
-
-list1 = [a,b]
-# （１）
 import math
-for j in list1:
-    if type(j) == int and j >= 0:
-        if j == 1:
-            print('素数ではありません')
-
-        elif all(j % i != 0 for i in range(2,round(math.sqrt(j)) + 1)):
-            print('素数です')
-
+def prime(n):
+    if type(n) == int and n > 0:
+        if n == 1:
+            return False
+        elif n == 2:
+            return True
+        elif n % 2 == 0:
+            return False
+        elif all(n % i != 0 for i in range(3,round(math.sqrt(n)) + 1 ,2)):
+            return True
         else:
-             print('素数ですはありません')
-
+             return False
     else:
-         print('エラーを検出しました')
-
+         return 'エラーを検出しました'
 
 
 # 補遺
@@ -29,7 +24,5 @@ for j in list1:
     # elif all(b % i != 0) == True:
         # print('bは素数です')
         # exit()
-
-    # else:
-        # print('bは素数ではありません')
-        # exit()
+    
+    #else:
