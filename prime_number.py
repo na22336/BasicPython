@@ -1,25 +1,21 @@
-<<<<<<< Updated upstream
+
 import math
 def prime(n):
     if type(n) == int and n > 0:
         if n == 1:
-            print(False)
-            exit()
+            return False
         elif n == 2:
-            print(True)
-            exit()
+            return True
         elif n % 2 == 0:
-            print(False)
-            exit()
+            return False
         elif all(n % i != 0 for i in range(3,round(math.sqrt(n)) + 1 ,2)):
-            print(True)
-            exit()
+            return True
         else:
-             print(False)
-             exit()
+             return False
     else:
+
          print('エラーを検出しました')
-=======
+
 a = int(input("aの値を入力: "))
 b = int(input("bの値を入力: "))
 
@@ -53,7 +49,10 @@ if type(b) == int and b >= 0:
 else:
          print('エラーを検出しました')
          exit()
->>>>>>> Stashed changes
+
+
+         return 'エラーを検出しました'
+
 
 # 補遺
 #for i in range(1,math.ceil(math.sqrt(b))):
@@ -64,7 +63,5 @@ else:
     # elif all(b % i != 0) == True:
         # print('bは素数です')
         # exit()
-
-    # else:
-        # print('bは素数ではありません')
-        # exit()
+    
+    #else:
